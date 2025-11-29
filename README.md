@@ -1,7 +1,7 @@
 # personal-blog
 ### Working Flow
 
-##1. User Registration / Login
+1. User Registration / Login
 - User visits the website.
 - Can Register / Login via:
 	•	Email & Password
