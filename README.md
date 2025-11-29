@@ -1,141 +1,124 @@
-# personal-blog
-### Working Flow
+# Django_Blog_Platform
 
-1. User Registration / Login
-   - User visits the website.
-   - Can Register / Login via:
-     • Email & Password  
-     • Secured authentication system  
-   - If login successful → redirected to Homepage  
-   - If login fails → Show validation messages (wrong password, fields required, etc.)
+## Working Flow
 
-2. Homepage Opens
-   • User will see a clean and responsive homepage  
-   • Homepage contains different options, sections, layouts:
+### 1. User Registration / Login
+- User visits the website.
+- Can Register / Login using:
+  - Email & Password
+  - Secure Django Authentication System
 
-   Section  
-   Description  
-   Latest Posts  
-   Shows latest blog posts with image, title, short description  
-   Categories / Tags  
-   Filter blogs by tags or categories  
-   Featured Posts  
-   Highlighted blogs selected by admin  
-   Search  
-   Search blog posts by title or keywords  
-   Quick Actions  
-   Create Post, View Profile, Logout
+| Action | Result |
+|:-----------------------------|:----------------------------------------------|
+| User enters valid credentials | Redirect to Homepage |
+| User enters invalid details | Show error message (Incorrect password, Required fields missing) |
 
-3. User Creates a Blog Post
-   • User can click:
-     
-     Option  
-     Action  
-     Create Post  
-     Opens form to write a new blog  
-     Edit Post  
-     Update old post  
-     Delete Post  
-     Remove existing post  
+---
 
-   • Form Validations:
-     - Title required  
-     - Content required  
-     - Image upload validation  
-     - Minimum content length check  
+### 2. Homepage Opens
+- User will see a clean, responsive blog homepage.
+- Homepage contains multiple dynamic sections and layouts:
 
-4. Blog Post View
-   • Full blog details open:
-     - Title  
-     - Author  
-     - Date  
-     - Image  
-     - Full content  
-     - Tags  
+| Section | Description |
+|:----------------------|:-------------------------------------------------------------|
+| **Latest Posts** | Shows latest blog posts with title, image & short description |
+| **Categories** | Filter posts by category or tag |
+| **Featured Posts** | Highlighted or trending recommended posts |
+| **Search** | Search blogs by title, keywords, or tags |
+| **Quick Actions** | Create Post, View Profile, Logout options |
 
-   • Also shows:
-     - Related posts  
-     - Reading time  
-     - Share options  
+---
 
-5. Comments Section
-   • Users can:
-     - Add comments  
-     - Edit or delete their own comments  
-     - View all comments under blog  
-   • Validations: no empty comments
+### 3. User Creates a Blog Post
+- User clicks **Create Post**.
+- User fills the blog form:
 
-6. User Profile
-   • User can see:
-     - Their posts  
-     - Drafts  
-     - Update profile  
-     - Edit/Delete posts  
+| Field | Description |
+|:-------------|:-------------------------------------------|
+| Title | Blog post title |
+| Content | Main rich-text content |
+| Image | Upload featured image |
+| Tags | Add relevant tags |
 
-7. Admin Panel
-   • Admin receives all posts  
-   • Admin can:
-     - Approve / Decline posts  
-     - Manage users  
-     - Manage comments  
-     - Manage tags & categories  
+- Validations:
+  - Title is required  
+  - Content is required  
+  - Minimum length validation  
+  - Image format/type check  
 
-8. End
+---
 
-### Development Status
+### 4. Blog Post View
+- When user opens a specific blog:
+  - Title  
+  - Author  
+  - Published Date  
+  - Featured Image  
+  - Full Blog Content  
+  - Tags  
 
-Dynamic Features  
-Section  
-Description  
-Status  
+- Additional Features:
+  - Related posts  
+  - Estimated reading time  
+  - Share button  
 
-User Authentication  
-Login, Signup, logout, validation  
-Completed  
+---
 
-Homepage Layout  
-Latest posts, featured posts, search bar  
-Completed  
+### 5. Comments Section
+- Users can:
+  - Add comments  
+  - Edit their comments  
+  - Delete their comments  
+  - View all comments under a post  
 
-Create / Edit Posts  
-Form validations, image upload  
-Completed  
+| Action | Result |
+|:----------------------|:--------------------------------------------|
+| User adds a comment | Comment displayed below the post |
+| User leaves empty comment | Validation message shown |
 
-View Post  
-Full page view with comments  
-Completed  
+---
 
-Comments System  
-Add, edit, delete comment  
-Completed  
+### 6. User Profile
+- User can:
+  - View their authored posts  
+  - Edit posts  
+  - Delete posts  
+  - Update profile details  
 
-Categories & Tags  
-Sorting & filtering blogs  
-In Progress  
+---
 
-User Profile  
-Manage posts & profile  
-In Progress  
+### 7. Admin Dashboard
+- Admin manages the full blog system.
 
-Admin Dashboard  
-Post approval, management  
-In Progress  
+| Admin Feature | Description |
+|:----------------------|:------------------------------------------------|
+| **Manage Posts** | Approve, edit, or delete any blog |
+| **Manage Users** | Add, edit, or remove users |
+| **Manage Comments** | Remove or control user comments |
+| **Manage Categories** | Add, delete, or modify tags & categories |
 
-AI Assistant  
-Suggest tags or summaries  
-Not Started
+---
 
-### Frontend Development
-templates/  
-home.html  
-login.html  
-register.html  
-post_create.html  
-post_detail.html  
-profile.html  
-base.html  
+### 8. End
 
-static/  
-css/style.css  
-js/script.js  
-images/
+---
+
+## Development Status
+
+### Dynamic Features
+
+| Section | Description | Status |
+|:---------------------|:-----------------------------------------------|:---------:|
+| **User Authentication** | Login, Signup, Logout, Validation | ✔ Completed |
+| **Homepage Layout** | Latest posts, featured posts, search bar | ✔ Completed |
+| **Create/Edit Post** | User blog creation with validation | ✔ Completed |
+| **Post Detail Page** | Full blog view with tags & related posts | ✔ Completed |
+| **Comments System** | Add, edit, delete comments | ✔ Completed |
+| **Categories & Tags** | Sorting & filtering blogs | 🔄 In Progress |
+| **User Profile** | Manage posts & account | 🔄 In Progress |
+| **Admin Dashboard** | Manage users, posts, comments | 🔄 In Progress |
+| **AI Assistant (Optional)** | Auto-generate tags or summaries | ❌ Not Started |
+
+---
+
+## Frontend Development Files
