@@ -122,3 +122,27 @@
 ---
 
 ## Frontend Development Files
+templates/
+├── base.html
+├── home.html
+├── login.html
+├── register.html
+├── post_create.html
+├── post_detail.html
+├── profile.html
+└── error_pages/
+    ├── 404.html
+    └── 500.html
+
+## Static Files
+static/
+├── css/
+│   └── style.css
+│
+├── js/
+│   └── script.js
+│
+└── images/
+    ├── logo.png
+    ├── default_thumbnail.jpg
+    └── user_profile_default.png
