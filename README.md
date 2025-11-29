@@ -1,4 +1,4 @@
-# Django_Blog_Platform
+# Django_Blog
 
 ## Working Flow
 
