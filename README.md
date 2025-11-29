@@ -135,14 +135,14 @@ templates/
     └── 500.html
 
 ## Static Files
-static/
-├── css/
-│   └── style.css
-│
-├── js/
-│   └── script.js
-│
-└── images/
-    ├── logo.png
-    ├── default_thumbnail.jpg
-    └── user_profile_default.png
+-static/
+-css/
+ - style.css
+
+-js
+ - script.js
+
+-images/
+ - logo.png
+ - default_thumbnail.jpg
+ - user_profile_default.png
